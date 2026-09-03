@@ -14,24 +14,18 @@ A high-resolution nighttime semantic segmentation dataset with normal/long-expos
 - [Dataset](#dataset)
 - [Dataset Statistics](#dataset-statistics)
 - [Semantic Classes](#semantic-classes)
-- [Exposure Comparison](#exposure-comparison)
 - [Benchmark](#benchmark)
 - [Qualitative Results](#qualitative-results)
 - [Download](#download)
-- [Citation](#citation)
 - [License](#license)
 - [Contact](#contact)
+- [Citation](#citation)
 
 ---
 
 ## Overview
 
-NightHiRes is a high-resolution paired dataset designed for nighttime
-semantic segmentation.
-
-The dataset contains paired nighttime images captured under normal-
-and long-exposure conditions, together with dense pixel-level semantic
-annotations.
+NightHiRes is a high-resolution real-world nighttime semantic-segmentation dataset with dense pixel-level annotations and paired normal- and long-exposure images acquired from the same scenes and viewpoints. 
 
 By providing paired images of the same scene under different exposure
 conditions, NightHiRes enables the investigation of how exposure
@@ -50,8 +44,7 @@ affects scene visibility and downstream semantic segmentation.
 
 ## Dataset
 
-NightHiRes provides high-resolution nighttime urban and built scenes with
-pixel-level semantic annotations.
+Semantic segmentation has advanced substantially under well-illuminated daytime conditions, yet reliable segmentation of nighttime scenes remains challenging. existing nighttime semantic-segmentation benchmarks are not specifically designed to isolate how physical exposure conditions affect dense scene understanding. To address this gap, we introduce NightHiRes. The long-exposure images it contains can provide additional light information and can reveal object boundaries and structural details that are difficult to observe in normal-exposure nighttime images.
 
 ### Key Features
 
@@ -95,25 +88,6 @@ Classes marked as void are ignored during training and evaluation.
 
 ---
 
-## Exposure Comparison
-
-NightHiRes provides paired normal-exposure and long-exposure images
-captured from the same scenes.
-
-<p align="center">
-  <img src="assets/normal_long.png" width="90%">
-</p>
-
-<p align="center">
-  Comparison between normal-exposure and long-exposure images.
-</p>
-
-Long-exposure images provide additional light information and can
-reveal object boundaries and structural details that are difficult to
-observe in normal-exposure nighttime images.
-
----
-
 ## Benchmark
 
 NightHiRes can be used to evaluate semantic segmentation models under
@@ -150,7 +124,7 @@ Segmentation results of long-exposure images
 </p>
 
 <p align="center">
-  Qualitative semantic segmentation results on the NightHiRes test set.
+  Qualitative semantic segmentation results on the NightHiRes normal-exposure test set.
 </p>
 
 ---
@@ -162,6 +136,15 @@ The NightHiRes dataset will be released soon.
 **Dataset:** Coming soon.
 
 **Code:** Coming soon.
+
+---
+## License
+The license information will be provided with the official dataset release.
+
+---
+
+## Contact
+If you have any questions or suggestions, please contact Lei.Fan@xjtlu.edu.cn.
 
 ---
 
@@ -177,11 +160,3 @@ citing our work:
   journal={TBD},
   year={TBD}
 }
-
----
-
-## License
-The license information will be provided with the official dataset release.
-
-## Contact
-If you have any questions or suggestions, please contact Lei.Fan@xjtlu.edu.cn.
