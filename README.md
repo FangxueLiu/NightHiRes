@@ -37,6 +37,7 @@ By providing paired images of the same scene under different exposure
 conditions, NightHiRes enables the investigation of how exposure
 affects scene visibility and downstream semantic segmentation.
 
+
 <p align="center">
   <img src="assets/overview.png" width="90%">
 </p>
@@ -49,57 +50,66 @@ affects scene visibility and downstream semantic segmentation.
 
 ## Dataset
 
-NightHiRes provides high-resolution nighttime urban scenes with
+NightHiRes provides high-resolution nighttime urban and built scenes with
 pixel-level semantic annotations.
 
 ### Key Features
 
 - High-resolution nighttime images
-- Paired normal- and long-exposure images
-- One-to-one correspondence between paired images
+- One-to-one paired normal- and long-exposure images
 - Dense pixel-level semantic annotations
-- Cityscapes-compatible 19 semantic classes
+- 19 semantic classes
 - Designed for nighttime semantic segmentation research
 
 ---
 
 ## Dataset Statistics
 
+| Attribute | Description |
+|:---|:---|
+| Resolution | 5568×4872 |
+| Collection equipmentn | GoPro HERO12 |
+| Exposure time | 1/125s (normal exposure)<br>2s (long exposure) |
+| ISO | 100-3200 |
+| Dataset size | 350 normal/long-exposure image pairs,<br>including 223 pairs with pixel-level<br>semantic annotations |
+
+**Official split**
 | Split | Images |
 |:---:|---:|
-| Train | TBD |
-| Validation | TBD |
-| Test | TBD |
-| **Total** | **TBD** |
+| Train | 156 |
+| Validation | 33 |
+| Test | 34 |
+| **Total** | **223** |
 
 ---
 
 ## Semantic Classes
 
-NightHiRes follows the Cityscapes-compatible 19-class semantic
-segmentation setting.
+NightHiRes uses 19-class semantic segmentation setting.
+Classes marked as void are ignored during training and evaluation.
 
 | ID | Class |
 |---:|---|
-| 1 | Road |
-| 2 | Sidewalk |
-| 3 | Building |
-| 4 | Wall |
-| 5 | Fence |
-| 6 | Pole |
-| 7 | Traffic Light |
-| 8 | Traffic Sign |
-| 9 | Vegetation |
-| 10 | Terrain |
-| 11 | Sky |
-| 12 | Person |
-| 13 | Rider |
-| 14 | Car |
-| 15 | Truck |
-| 16 | Bus |
-| 17 | Train |
-| 18 | Motorcycle |
-| 19 | Bicycle |
+| 0 | Road |
+| 1 | Sidewalk |
+| 2 | Building |
+| 3 | Wall |
+| 4 | Fence |
+| 5 | Pole |
+| 6 | Traffic Light |
+| 7 | Traffic Sign |
+| 8 | Vegetation |
+| 9 | Terrain |
+| 10 | Sky |
+| 11 | Person |
+| 12 | Rider |
+| 13 | Car |
+| 14 | Truck |
+| 15 | Bus |
+| 16 | Train |
+| 17 | Motorcycle |
+| 18 | Bicycle |
+| 19 | Void |
 
 ---
 
