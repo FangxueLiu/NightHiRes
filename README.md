@@ -2,7 +2,7 @@
 
 # NightHiRes
 
-### NightHiRes: an exposure-paired high-resolution dataset for low-light scene semantic segmentation  
+### NightHiRes: A high-resolution nighttime dataset with varying exposure for low-light scene semantic segmentation  
 A high-resolution nighttime semantic segmentation dataset with normal/long-exposure image pairs.
 </div>
 
